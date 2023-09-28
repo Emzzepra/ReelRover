@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", "sans-serif";
+}
+
+body {
+  font-family: "Inter", "sans-serif";
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 99999;
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.dropdown-content button {
+  float: none;
+  display: block;
+}
+.active .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.dropdown-button {
+  z-index: 50;
+  background-color: white;
+}
+
+.social_links a:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease-in-out;
+}
+
+.chicken {
+  z-index: 10;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
